@@ -5,7 +5,7 @@
 Adhan (prayer) times.
 }
 \description{
-Retreive Adhan (prayer) times, according to city, country and method input. Defining the method, city and country parameters is mandatory.
+Get Adhan (prayer) times, according to city, country and method input. Defining the method, city and country parameters is mandatory.
 }
 \usage{
 adhan(method , city, country, day, month, year)
