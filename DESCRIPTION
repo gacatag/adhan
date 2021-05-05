@@ -1,0 +1,20 @@
+Package: adhan
+Type: Package
+Title: Retrieve Adhan (i.e. Islamic prayer) times
+Version: 1.0
+Date: 2021-05-02
+Author: Ali Oghabian <ali.oghabian@gmail.com>
+Maintainer: Ali Oghabian <ali.oghabian@gmail.com>
+Description: The package supports functions that show the Adhan (i.e. islamic prayer) 
+	times. It uses the API supported by https://aladhan.com/, so the user should 
+	be connected to the Internet. Additionally Adhan package also provides tools 
+	to map a prayer time in a city (e.g. Mecca) to that of another city (e.g. 
+	Helsinki) whilst estimating all the praying times in the latter (i.e. 
+	Helsinki) based on the prayer times in the former (i.e. Mecca). This is 
+	useful for those who live in cities with very long nights/days and wish to 
+	follow prayer times of another city.
+License: GPL-2
+Imports: jsonlite
+Suggests: knitr, rmarkdown
+VignetteBuilder: knitr
+NeedsCompilation: no

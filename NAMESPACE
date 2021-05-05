@@ -1,0 +1,2 @@
+export("adhan", "adhanHelsinkiUniTeh", "adhanMap", "adhanMapHelsinkiMeccaUniTeh", "adhanMapMonth", "adhanMonth")
+importFrom(jsonlite,fromJSON)

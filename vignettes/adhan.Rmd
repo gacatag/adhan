@@ -1,0 +1,115 @@
+---
+title: "adhan"
+date: "`r Sys.Date()`"
+author: "Ali Oghabian"
+contact: "ali.oghabian@gmail.com"
+output: rmarkdown::html_vignette
+vignette: >
+  %\VignetteIndexEntry{adhan, retreive islamic prayer times}
+  %\VignetteEngine{knitr::rmarkdown}
+  \usepackage[utf8]{inputenc}
+---
+In this documents the following subjects are covered:
+
+* [Get prayer times based on city and country name](#city)
+* [Calculate the prayer times for a city by mapping prayer times of another city and defining a reference](#ref)
+
+Note that the package uses API provided by [Aladhan.com][aladhanLink]
+
+## Introduction to IntEREst {#city}
+
+You can get the prayers times of a city using `adhan()`. The following codes shows the prayer time info of helsinki based on the name of  the city and country and the date. Note that method 7 refers to the method of estim,ating prayer times that is used by Institute of Geophysics (University of Tehran). For a full list of supported methods execute `?adhan`.
+
+<br>
+```{r adhanCityDate, out.width = 500, echo=TRUE, eval=TRUE }
+library(adhan)
+adhan( 
+    method=7,
+    city="Helsinki",
+    country="Finland",
+    day=5, 
+    month=5, 
+    year=2021)
+```
+<br>
+
+If you do not fill the date info, the function will use the info provided by the system.
+
+<br>
+```{r adhanCityNoDate, out.width = 500, echo=TRUE, eval=TRUE }
+adhan( 
+    method=7,
+    city="Helsinki",
+    country="Finland")
+```
+<br>
+
+You can get the complete prayer times of a whole month by running the following code.
+<br>
+```{r adhanCityNoDateMonth, out.width = 500, echo=TRUE, eval=TRUE }
+
+# Get prayer times of the current month
+adhanMonth(
+  method="7",
+  city="Helsinki",
+  country="Finland")
+
+# Get prayer times of a month
+adhanMonth(
+  method="7",
+  city="Helsinki",
+  country="Finland", 
+  month=3, 
+  year=2021)
+```
+<br>
+
+## Calculate the prayer times for a city by mapping prayer times of another city and defining a reference {#ref}
+
+In some cities (e.g. Helsinki, Finland) the length of the day (in Summer) and night (in winter) are very long. Therefore, some follow prayer schedules of other cities (e.g. Mecca, Saudi Arabia). Furthermore, they may want to align a prayer time (e.g. Dhuhr) in two locations and accordingly calculate the remaining prayer times, based on their time difference from Dhuhr. The following code is an example of mapping Dhuhr in Mecca, Saudi Arabia to Dhur in Helsinki, Finland. It then calculates the prayer times of Helsinki based on the differences of these times from Dhuhr in Mecca.
+```{r adhanMapNoDate, out.width = 500, echo=TRUE, eval=TRUE }
+
+# The current day's prayer times in Helsinki based on aligning Dhuhr and prayer times in Mecca
+adhanMap(
+    method="7",
+    city="Helsinki",
+    country="Finland",
+    mapCity="Mecca",
+    mapCountry="Saudi Arabia",
+    mapBy="Dhuhr")
+
+# The prayer times of a day in Helsinki based on aligning Dhuhr and prayer times in Mecca
+adhanMap(
+    method="7",
+    city="Helsinki",
+    country="Finland",
+    mapCity="Mecca",
+    mapCountry="Saudi Arabia",
+    mapBy="Dhuhr", 
+    day=21, 
+    month=3, 
+    year=2021)
+
+# The current month's prayer times in Helsinki based on aligning Dhuhr and prayer times in Mecca
+adhanMapMonth(
+  method="7",
+  city="Helsinki",
+  country="Finland",
+  mapCity="Mecca",
+  mapCountry="Saudi Arabia", mapBy="Dhuhr")
+
+# The prayer times of a defined month in Helsinki based on aligning Dhuhr and prayer times in Mecca
+adhanMapMonth(
+    method="7",
+    city="Helsinki",
+    country="Finland",
+    mapCity="Mecca",
+    mapCountry="Saudi Arabia",
+    mapBy="Dhuhr", 
+    month=3, 
+    year=2021)
+```
+<br>
+
+
+[aladhanLink]: http://aladhan.com 
