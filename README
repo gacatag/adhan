@@ -1,13 +1,6 @@
 Adhan
 
-The package supports functions that show the Adhan (i.e. islamic prayer) 
-	times. It uses the API supported by https://aladhan.com/, so the user should 
-	be connected to the Internet. Additionally adhan package also provides tools 
-	to map a prayer time in a city (e.g. Mecca) to that of another city (e.g. 
-	Helsinki) whilst estimating all the praying times in the latter (i.e. 
-	Helsinki) based on the prayer times in the former (i.e. Mecca). This is 
-	useful for those who live in cities with very long nights/days and wish to 
-	follow prayer times of another city.
+The package supports functions that show the Adhan (i.e. islamic prayer) times. It uses the API supported by https://aladhan.com/, so the user should be connected to the Internet. Additionally adhan package also provides tools to map a prayer time in a city (e.g. Mecca) to that of another city (e.g. Helsinki) whilst estimating all the praying times in the latter (i.e. Helsinki) based on the prayer times in the former (i.e. Mecca). This is useful for those who live in cities with very long nights/days and wish to follow prayer times of another city.
  
 
 To install the package from Github you can use the following script in R:
