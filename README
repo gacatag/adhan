@@ -9,11 +9,11 @@ library(devtools)
 install_github("gacatag/adhan")
 
 
-To test you can start by running the following command:
+To test, you can start by running the following command. This will provide Helsinki's prayer times (for the current day), based on the method used by Institute of Geophysics (University of Tehran) :
 
-adhan::adhanMapHelsinkiMeccaUniTeh()
+adhan::adhanHelsinkiUniTeh()
 
 
-For more information about the package see the vignette:
+For more information about the package and the functions, see the vignette:
 
 vignette("adhan")
