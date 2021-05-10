@@ -70,8 +70,8 @@ Please clarify the method. You can choose numbers 0 to 14 which stand for:
                      callMap$data$timings)
 
     # outRes<- tapply(as.POSIXct(rep(gsub(" .*","", res[,""]), each=(ncol(res)-2)), format="%H:%M"),  rep(1:nrow(res),each=(ncol(res)-2)), c) + 
-    diffT<- apply(resMap[,-c(1, length(resMap))], 2, function(x) return(difftime(as.POSIXct(gsub(" .*","",x), format="%H:%M"),as.POSIXct(gsub(" .*","",resMap[,mapBy]), format="%H:%M"), units = "secs")))
-  outRes<- resMap[,-c(1, length(resMap))]
+    diffT<- apply(resMap[,-c(1)], 2, function(x) return(difftime(as.POSIXct(gsub(" .*","",x), format="%H:%M"),as.POSIXct(gsub(" .*","",resMap[,mapBy]), format="%H:%M"), units = "secs")))
+  outRes<- resMap[,-c(1)]
   for(j in 1:ncol(outRes))
     outRes[,j]<-diffT[,j]+as.POSIXct(gsub(" .*","", res[,mapBy]), format="%H:%M")
                  

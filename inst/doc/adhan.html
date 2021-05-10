@@ -12,7 +12,7 @@
 
 <meta name="author" content="Ali Oghabian" />
 
-<meta name="date" content="2021-05-06" />
+<meta name="date" content="2021-05-10" />
 
 <title>adhan</title>
 
@@ -332,7 +332,7 @@ code > span.er { color: #a61717; background-color: #e3d2d2; }
 
 <h1 class="title toc-ignore">adhan</h1>
 <h4 class="author">Ali Oghabian</h4>
-<h4 class="date">2021-05-06</h4>
+<h4 class="date">2021-05-10</h4>
 
 
 
@@ -366,9 +366,9 @@ code > span.er { color: #a61717; background-color: #e3d2d2; }
 <span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a>    <span class="at">city=</span><span class="st">&quot;Helsinki&quot;</span>,</span>
 <span id="cb3-4"><a href="#cb3-4" aria-hidden="true" tabindex="-1"></a>    <span class="at">country=</span><span class="st">&quot;Finland&quot;</span>)</span></code></pre></div>
 <pre><code>##           date           Fajr        Sunrise          Dhuhr            Asr 
-##   &quot;06-05-2021&quot; &quot;02:50 (EEST)&quot; &quot;05:03 (EEST)&quot; &quot;13:17 (EEST)&quot; &quot;17:33 (EEST)&quot; 
+##   &quot;10-05-2021&quot; &quot;02:46 (EEST)&quot; &quot;04:53 (EEST)&quot; &quot;13:17 (EEST)&quot; &quot;17:37 (EEST)&quot; 
 ##         Sunset        Maghrib           Isha          Imsak       Midnight 
-## &quot;21:32 (EEST)&quot; &quot;22:05 (EEST)&quot; &quot;23:17 (EEST)&quot; &quot;02:40 (EEST)&quot; &quot;01:18 (EEST)&quot;</code></pre>
+## &quot;21:41 (EEST)&quot; &quot;22:14 (EEST)&quot; &quot;23:22 (EEST)&quot; &quot;02:36 (EEST)&quot; &quot;01:17 (EEST)&quot;</code></pre>
 <p><br></p>
 <p>You can get the complete prayer times of a whole month by running the following code. <br></p>
 <div class="sourceCode" id="cb5"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Get prayer times of the current month</span></span>
@@ -525,9 +525,9 @@ code > span.er { color: #a61717; background-color: #e3d2d2; }
 <span id="cb9-7"><a href="#cb9-7" aria-hidden="true" tabindex="-1"></a>    <span class="at">mapCountry=</span><span class="st">&quot;Saudi Arabia&quot;</span>,</span>
 <span id="cb9-8"><a href="#cb9-8" aria-hidden="true" tabindex="-1"></a>    <span class="at">mapBy=</span><span class="st">&quot;Dhuhr&quot;</span>)</span></code></pre></div>
 <pre><code>##          date          Fajr       Sunrise         Dhuhr           Asr 
-##  &quot;06-05-2021&quot; &quot;05:28 (+03)&quot; &quot;06:47 (+03)&quot; &quot;13:17 (+03)&quot; &quot;16:37 (+03)&quot; 
-##        Sunset       Maghrib          Isha         Imsak 
-## &quot;19:48 (+03)&quot; &quot;20:05 (+03)&quot; &quot;20:49 (+03)&quot; &quot;05:18 (+03)&quot;</code></pre>
+##  &quot;10-05-2021&quot; &quot;05:26 (+03)&quot; &quot;06:45 (+03)&quot; &quot;13:17 (+03)&quot; &quot;16:35 (+03)&quot; 
+##        Sunset       Maghrib          Isha         Imsak      Midnight 
+## &quot;19:50 (+03)&quot; &quot;20:06 (+03)&quot; &quot;20:51 (+03)&quot; &quot;05:16 (+03)&quot; &quot;01:17 (+03)&quot;</code></pre>
 <div class="sourceCode" id="cb11"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb11-1"><a href="#cb11-1" aria-hidden="true" tabindex="-1"></a><span class="co"># The prayer times of a day in Helsinki based on aligning Dhuhr and prayer times in Mecca</span></span>
 <span id="cb11-2"><a href="#cb11-2" aria-hidden="true" tabindex="-1"></a><span class="fu">adhanMap</span>(</span>
 <span id="cb11-3"><a href="#cb11-3" aria-hidden="true" tabindex="-1"></a>    <span class="at">method=</span><span class="st">&quot;7&quot;</span>,</span>
@@ -541,8 +541,8 @@ code > span.er { color: #a61717; background-color: #e3d2d2; }
 <span id="cb11-11"><a href="#cb11-11" aria-hidden="true" tabindex="-1"></a>    <span class="at">year=</span><span class="dv">2021</span>)</span></code></pre></div>
 <pre><code>##          date          Fajr       Sunrise         Dhuhr           Asr 
 ##  &quot;21-03-2021&quot; &quot;05:10 (+03)&quot; &quot;06:23 (+03)&quot; &quot;12:27 (+03)&quot; &quot;15:51 (+03)&quot; 
-##        Sunset       Maghrib          Isha         Imsak 
-## &quot;18:31 (+03)&quot; &quot;18:47 (+03)&quot; &quot;19:28 (+03)&quot; &quot;05:00 (+03)&quot;</code></pre>
+##        Sunset       Maghrib          Isha         Imsak      Midnight 
+## &quot;18:31 (+03)&quot; &quot;18:47 (+03)&quot; &quot;19:28 (+03)&quot; &quot;05:00 (+03)&quot; &quot;00:27 (+03)&quot;</code></pre>
 <div class="sourceCode" id="cb13"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb13-1"><a href="#cb13-1" aria-hidden="true" tabindex="-1"></a><span class="co"># The current month&#39;s prayer times in Helsinki based on aligning Dhuhr and prayer times in Mecca</span></span>
 <span id="cb13-2"><a href="#cb13-2" aria-hidden="true" tabindex="-1"></a><span class="fu">adhanMapMonth</span>(</span>
 <span id="cb13-3"><a href="#cb13-3" aria-hidden="true" tabindex="-1"></a>  <span class="at">method=</span><span class="st">&quot;7&quot;</span>,</span>
@@ -582,38 +582,38 @@ code > span.er { color: #a61717; background-color: #e3d2d2; }
 ## [29,] &quot;29-05-2021&quot; &quot;05:16 (+03)&quot; &quot;06:38 (+03)&quot; &quot;13:18 (+03)&quot; &quot;16:33 (+03)&quot;
 ## [30,] &quot;30-05-2021&quot; &quot;05:16 (+03)&quot; &quot;06:38 (+03)&quot; &quot;13:18 (+03)&quot; &quot;16:34 (+03)&quot;
 ## [31,] &quot;31-05-2021&quot; &quot;05:16 (+03)&quot; &quot;06:38 (+03)&quot; &quot;13:18 (+03)&quot; &quot;16:34 (+03)&quot;
-##       Sunset        Maghrib       Isha          Imsak        
-##  [1,] &quot;19:45 (+03)&quot; &quot;20:01 (+03)&quot; &quot;20:45 (+03)&quot; &quot;05:21 (+03)&quot;
-##  [2,] &quot;19:45 (+03)&quot; &quot;20:02 (+03)&quot; &quot;20:46 (+03)&quot; &quot;05:20 (+03)&quot;
-##  [3,] &quot;19:47 (+03)&quot; &quot;20:03 (+03)&quot; &quot;20:47 (+03)&quot; &quot;05:21 (+03)&quot;
-##  [4,] &quot;19:47 (+03)&quot; &quot;20:04 (+03)&quot; &quot;20:48 (+03)&quot; &quot;05:20 (+03)&quot;
-##  [5,] &quot;19:48 (+03)&quot; &quot;20:04 (+03)&quot; &quot;20:48 (+03)&quot; &quot;05:19 (+03)&quot;
-##  [6,] &quot;19:48 (+03)&quot; &quot;20:05 (+03)&quot; &quot;20:49 (+03)&quot; &quot;05:18 (+03)&quot;
-##  [7,] &quot;19:48 (+03)&quot; &quot;20:05 (+03)&quot; &quot;20:49 (+03)&quot; &quot;05:18 (+03)&quot;
-##  [8,] &quot;19:49 (+03)&quot; &quot;20:06 (+03)&quot; &quot;20:50 (+03)&quot; &quot;05:17 (+03)&quot;
-##  [9,] &quot;19:49 (+03)&quot; &quot;20:06 (+03)&quot; &quot;20:50 (+03)&quot; &quot;05:16 (+03)&quot;
-## [10,] &quot;19:50 (+03)&quot; &quot;20:06 (+03)&quot; &quot;20:51 (+03)&quot; &quot;05:16 (+03)&quot;
-## [11,] &quot;19:50 (+03)&quot; &quot;20:07 (+03)&quot; &quot;20:51 (+03)&quot; &quot;05:15 (+03)&quot;
-## [12,] &quot;19:50 (+03)&quot; &quot;20:07 (+03)&quot; &quot;20:52 (+03)&quot; &quot;05:14 (+03)&quot;
-## [13,] &quot;19:51 (+03)&quot; &quot;20:08 (+03)&quot; &quot;20:53 (+03)&quot; &quot;05:14 (+03)&quot;
-## [14,] &quot;19:51 (+03)&quot; &quot;20:08 (+03)&quot; &quot;20:53 (+03)&quot; &quot;05:13 (+03)&quot;
-## [15,] &quot;19:52 (+03)&quot; &quot;20:09 (+03)&quot; &quot;20:54 (+03)&quot; &quot;05:12 (+03)&quot;
-## [16,] &quot;19:52 (+03)&quot; &quot;20:09 (+03)&quot; &quot;20:54 (+03)&quot; &quot;05:12 (+03)&quot;
-## [17,] &quot;19:53 (+03)&quot; &quot;20:10 (+03)&quot; &quot;20:55 (+03)&quot; &quot;05:11 (+03)&quot;
-## [18,] &quot;19:53 (+03)&quot; &quot;20:10 (+03)&quot; &quot;20:55 (+03)&quot; &quot;05:11 (+03)&quot;
-## [19,] &quot;19:54 (+03)&quot; &quot;20:11 (+03)&quot; &quot;20:56 (+03)&quot; &quot;05:10 (+03)&quot;
-## [20,] &quot;19:54 (+03)&quot; &quot;20:11 (+03)&quot; &quot;20:57 (+03)&quot; &quot;05:10 (+03)&quot;
-## [21,] &quot;19:54 (+03)&quot; &quot;20:12 (+03)&quot; &quot;20:57 (+03)&quot; &quot;05:09 (+03)&quot;
-## [22,] &quot;19:55 (+03)&quot; &quot;20:12 (+03)&quot; &quot;20:58 (+03)&quot; &quot;05:09 (+03)&quot;
-## [23,] &quot;19:55 (+03)&quot; &quot;20:12 (+03)&quot; &quot;20:58 (+03)&quot; &quot;05:08 (+03)&quot;
-## [24,] &quot;19:56 (+03)&quot; &quot;20:13 (+03)&quot; &quot;20:59 (+03)&quot; &quot;05:08 (+03)&quot;
-## [25,] &quot;19:55 (+03)&quot; &quot;20:12 (+03)&quot; &quot;20:58 (+03)&quot; &quot;05:07 (+03)&quot;
-## [26,] &quot;19:56 (+03)&quot; &quot;20:13 (+03)&quot; &quot;20:59 (+03)&quot; &quot;05:06 (+03)&quot;
-## [27,] &quot;19:56 (+03)&quot; &quot;20:13 (+03)&quot; &quot;20:59 (+03)&quot; &quot;05:06 (+03)&quot;
-## [28,] &quot;19:57 (+03)&quot; &quot;20:15 (+03)&quot; &quot;21:01 (+03)&quot; &quot;05:07 (+03)&quot;
-## [29,] &quot;19:58 (+03)&quot; &quot;20:15 (+03)&quot; &quot;21:01 (+03)&quot; &quot;05:06 (+03)&quot;
-## [30,] &quot;19:58 (+03)&quot; &quot;20:16 (+03)&quot; &quot;21:02 (+03)&quot; &quot;05:06 (+03)&quot;
-## [31,] &quot;19:59 (+03)&quot; &quot;20:16 (+03)&quot; &quot;21:02 (+03)&quot; &quot;05:06 (+03)&quot;</code></pre>
+##       Sunset        Maghrib       Isha          Imsak         Midnight     
+##  [1,] &quot;19:45 (+03)&quot; &quot;20:01 (+03)&quot; &quot;20:45 (+03)&quot; &quot;05:21 (+03)&quot; &quot;01:17 (+03)&quot;
+##  [2,] &quot;19:45 (+03)&quot; &quot;20:02 (+03)&quot; &quot;20:46 (+03)&quot; &quot;05:20 (+03)&quot; &quot;01:17 (+03)&quot;
+##  [3,] &quot;19:47 (+03)&quot; &quot;20:03 (+03)&quot; &quot;20:47 (+03)&quot; &quot;05:21 (+03)&quot; &quot;01:18 (+03)&quot;
+##  [4,] &quot;19:47 (+03)&quot; &quot;20:04 (+03)&quot; &quot;20:48 (+03)&quot; &quot;05:20 (+03)&quot; &quot;01:17 (+03)&quot;
+##  [5,] &quot;19:48 (+03)&quot; &quot;20:04 (+03)&quot; &quot;20:48 (+03)&quot; &quot;05:19 (+03)&quot; &quot;01:17 (+03)&quot;
+##  [6,] &quot;19:48 (+03)&quot; &quot;20:05 (+03)&quot; &quot;20:49 (+03)&quot; &quot;05:18 (+03)&quot; &quot;01:17 (+03)&quot;
+##  [7,] &quot;19:48 (+03)&quot; &quot;20:05 (+03)&quot; &quot;20:49 (+03)&quot; &quot;05:18 (+03)&quot; &quot;01:17 (+03)&quot;
+##  [8,] &quot;19:49 (+03)&quot; &quot;20:06 (+03)&quot; &quot;20:50 (+03)&quot; &quot;05:17 (+03)&quot; &quot;01:17 (+03)&quot;
+##  [9,] &quot;19:49 (+03)&quot; &quot;20:06 (+03)&quot; &quot;20:50 (+03)&quot; &quot;05:16 (+03)&quot; &quot;01:17 (+03)&quot;
+## [10,] &quot;19:50 (+03)&quot; &quot;20:06 (+03)&quot; &quot;20:51 (+03)&quot; &quot;05:16 (+03)&quot; &quot;01:17 (+03)&quot;
+## [11,] &quot;19:50 (+03)&quot; &quot;20:07 (+03)&quot; &quot;20:51 (+03)&quot; &quot;05:15 (+03)&quot; &quot;01:17 (+03)&quot;
+## [12,] &quot;19:50 (+03)&quot; &quot;20:07 (+03)&quot; &quot;20:52 (+03)&quot; &quot;05:14 (+03)&quot; &quot;01:17 (+03)&quot;
+## [13,] &quot;19:51 (+03)&quot; &quot;20:08 (+03)&quot; &quot;20:53 (+03)&quot; &quot;05:14 (+03)&quot; &quot;01:17 (+03)&quot;
+## [14,] &quot;19:51 (+03)&quot; &quot;20:08 (+03)&quot; &quot;20:53 (+03)&quot; &quot;05:13 (+03)&quot; &quot;01:17 (+03)&quot;
+## [15,] &quot;19:52 (+03)&quot; &quot;20:09 (+03)&quot; &quot;20:54 (+03)&quot; &quot;05:12 (+03)&quot; &quot;01:17 (+03)&quot;
+## [16,] &quot;19:52 (+03)&quot; &quot;20:09 (+03)&quot; &quot;20:54 (+03)&quot; &quot;05:12 (+03)&quot; &quot;01:17 (+03)&quot;
+## [17,] &quot;19:53 (+03)&quot; &quot;20:10 (+03)&quot; &quot;20:55 (+03)&quot; &quot;05:11 (+03)&quot; &quot;01:17 (+03)&quot;
+## [18,] &quot;19:53 (+03)&quot; &quot;20:10 (+03)&quot; &quot;20:55 (+03)&quot; &quot;05:11 (+03)&quot; &quot;01:17 (+03)&quot;
+## [19,] &quot;19:54 (+03)&quot; &quot;20:11 (+03)&quot; &quot;20:56 (+03)&quot; &quot;05:10 (+03)&quot; &quot;01:17 (+03)&quot;
+## [20,] &quot;19:54 (+03)&quot; &quot;20:11 (+03)&quot; &quot;20:57 (+03)&quot; &quot;05:10 (+03)&quot; &quot;01:17 (+03)&quot;
+## [21,] &quot;19:54 (+03)&quot; &quot;20:12 (+03)&quot; &quot;20:57 (+03)&quot; &quot;05:09 (+03)&quot; &quot;01:17 (+03)&quot;
+## [22,] &quot;19:55 (+03)&quot; &quot;20:12 (+03)&quot; &quot;20:58 (+03)&quot; &quot;05:09 (+03)&quot; &quot;01:17 (+03)&quot;
+## [23,] &quot;19:55 (+03)&quot; &quot;20:12 (+03)&quot; &quot;20:58 (+03)&quot; &quot;05:08 (+03)&quot; &quot;01:17 (+03)&quot;
+## [24,] &quot;19:56 (+03)&quot; &quot;20:13 (+03)&quot; &quot;20:59 (+03)&quot; &quot;05:08 (+03)&quot; &quot;01:18 (+03)&quot;
+## [25,] &quot;19:55 (+03)&quot; &quot;20:12 (+03)&quot; &quot;20:58 (+03)&quot; &quot;05:07 (+03)&quot; &quot;01:17 (+03)&quot;
+## [26,] &quot;19:56 (+03)&quot; &quot;20:13 (+03)&quot; &quot;20:59 (+03)&quot; &quot;05:06 (+03)&quot; &quot;01:17 (+03)&quot;
+## [27,] &quot;19:56 (+03)&quot; &quot;20:13 (+03)&quot; &quot;20:59 (+03)&quot; &quot;05:06 (+03)&quot; &quot;01:17 (+03)&quot;
+## [28,] &quot;19:57 (+03)&quot; &quot;20:15 (+03)&quot; &quot;21:01 (+03)&quot; &quot;05:07 (+03)&quot; &quot;01:18 (+03)&quot;
+## [29,] &quot;19:58 (+03)&quot; &quot;20:15 (+03)&quot; &quot;21:01 (+03)&quot; &quot;05:06 (+03)&quot; &quot;01:18 (+03)&quot;
+## [30,] &quot;19:58 (+03)&quot; &quot;20:16 (+03)&quot; &quot;21:02 (+03)&quot; &quot;05:06 (+03)&quot; &quot;01:18 (+03)&quot;
+## [31,] &quot;19:59 (+03)&quot; &quot;20:16 (+03)&quot; &quot;21:02 (+03)&quot; &quot;05:06 (+03)&quot; &quot;01:18 (+03)&quot;</code></pre>
 <div class="sourceCode" id="cb15"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb15-1"><a href="#cb15-1" aria-hidden="true" tabindex="-1"></a><span class="co"># The prayer times of a defined month in Helsinki based on aligning Dhuhr and prayer times in Mecca</span></span>
 <span id="cb15-2"><a href="#cb15-2" aria-hidden="true" tabindex="-1"></a><span class="fu">adhanMapMonth</span>(</span>
 <span id="cb15-3"><a href="#cb15-3" aria-hidden="true" tabindex="-1"></a>    <span class="at">method=</span><span class="st">&quot;7&quot;</span>,</span>
@@ -656,38 +656,38 @@ code > span.er { color: #a61717; background-color: #e3d2d2; }
 ## [29,] &quot;29-03-2021&quot; &quot;06:03 (+03)&quot; &quot;07:16 (+03)&quot; &quot;13:25 (+03)&quot; &quot;16:50 (+03)&quot;
 ## [30,] &quot;30-03-2021&quot; &quot;06:02 (+03)&quot; &quot;07:15 (+03)&quot; &quot;13:25 (+03)&quot; &quot;16:50 (+03)&quot;
 ## [31,] &quot;31-03-2021&quot; &quot;06:00 (+03)&quot; &quot;07:14 (+03)&quot; &quot;13:24 (+03)&quot; &quot;16:49 (+03)&quot;
-##       Sunset        Maghrib       Isha          Imsak        
-##  [1,] &quot;18:25 (+03)&quot; &quot;18:41 (+03)&quot; &quot;19:22 (+03)&quot; &quot;05:18 (+03)&quot;
-##  [2,] &quot;18:24 (+03)&quot; &quot;18:40 (+03)&quot; &quot;19:21 (+03)&quot; &quot;05:17 (+03)&quot;
-##  [3,] &quot;18:26 (+03)&quot; &quot;18:42 (+03)&quot; &quot;19:22 (+03)&quot; &quot;05:17 (+03)&quot;
-##  [4,] &quot;18:26 (+03)&quot; &quot;18:42 (+03)&quot; &quot;19:23 (+03)&quot; &quot;05:16 (+03)&quot;
-##  [5,] &quot;18:26 (+03)&quot; &quot;18:42 (+03)&quot; &quot;19:23 (+03)&quot; &quot;05:15 (+03)&quot;
-##  [6,] &quot;18:26 (+03)&quot; &quot;18:42 (+03)&quot; &quot;19:22 (+03)&quot; &quot;05:14 (+03)&quot;
-##  [7,] &quot;18:26 (+03)&quot; &quot;18:42 (+03)&quot; &quot;19:23 (+03)&quot; &quot;05:13 (+03)&quot;
-##  [8,] &quot;18:28 (+03)&quot; &quot;18:43 (+03)&quot; &quot;19:24 (+03)&quot; &quot;05:13 (+03)&quot;
-##  [9,] &quot;18:28 (+03)&quot; &quot;18:44 (+03)&quot; &quot;19:25 (+03)&quot; &quot;05:12 (+03)&quot;
-## [10,] &quot;18:27 (+03)&quot; &quot;18:43 (+03)&quot; &quot;19:24 (+03)&quot; &quot;05:10 (+03)&quot;
-## [11,] &quot;18:28 (+03)&quot; &quot;18:43 (+03)&quot; &quot;19:24 (+03)&quot; &quot;05:09 (+03)&quot;
-## [12,] &quot;18:29 (+03)&quot; &quot;18:45 (+03)&quot; &quot;19:26 (+03)&quot; &quot;05:09 (+03)&quot;
-## [13,] &quot;18:29 (+03)&quot; &quot;18:45 (+03)&quot; &quot;19:26 (+03)&quot; &quot;05:09 (+03)&quot;
-## [14,] &quot;18:29 (+03)&quot; &quot;18:44 (+03)&quot; &quot;19:25 (+03)&quot; &quot;05:07 (+03)&quot;
-## [15,] &quot;18:30 (+03)&quot; &quot;18:46 (+03)&quot; &quot;19:27 (+03)&quot; &quot;05:07 (+03)&quot;
-## [16,] &quot;18:30 (+03)&quot; &quot;18:46 (+03)&quot; &quot;19:27 (+03)&quot; &quot;05:06 (+03)&quot;
-## [17,] &quot;18:31 (+03)&quot; &quot;18:46 (+03)&quot; &quot;19:27 (+03)&quot; &quot;05:05 (+03)&quot;
-## [18,] &quot;18:30 (+03)&quot; &quot;18:46 (+03)&quot; &quot;19:27 (+03)&quot; &quot;05:03 (+03)&quot;
-## [19,] &quot;18:31 (+03)&quot; &quot;18:47 (+03)&quot; &quot;19:28 (+03)&quot; &quot;05:03 (+03)&quot;
-## [20,] &quot;18:32 (+03)&quot; &quot;18:47 (+03)&quot; &quot;19:28 (+03)&quot; &quot;05:02 (+03)&quot;
-## [21,] &quot;18:31 (+03)&quot; &quot;18:47 (+03)&quot; &quot;19:28 (+03)&quot; &quot;05:00 (+03)&quot;
-## [22,] &quot;18:32 (+03)&quot; &quot;18:48 (+03)&quot; &quot;19:29 (+03)&quot; &quot;05:00 (+03)&quot;
-## [23,] &quot;18:33 (+03)&quot; &quot;18:48 (+03)&quot; &quot;19:29 (+03)&quot; &quot;04:59 (+03)&quot;
-## [24,] &quot;18:32 (+03)&quot; &quot;18:48 (+03)&quot; &quot;19:29 (+03)&quot; &quot;04:57 (+03)&quot;
-## [25,] &quot;18:32 (+03)&quot; &quot;18:48 (+03)&quot; &quot;19:29 (+03)&quot; &quot;04:56 (+03)&quot;
-## [26,] &quot;18:34 (+03)&quot; &quot;18:49 (+03)&quot; &quot;19:30 (+03)&quot; &quot;04:56 (+03)&quot;
-## [27,] &quot;18:34 (+03)&quot; &quot;18:50 (+03)&quot; &quot;19:31 (+03)&quot; &quot;04:55 (+03)&quot;
-## [28,] &quot;19:33 (+03)&quot; &quot;19:49 (+03)&quot; &quot;20:30 (+03)&quot; &quot;05:53 (+03)&quot;
-## [29,] &quot;19:35 (+03)&quot; &quot;19:50 (+03)&quot; &quot;20:32 (+03)&quot; &quot;05:53 (+03)&quot;
-## [30,] &quot;19:35 (+03)&quot; &quot;19:51 (+03)&quot; &quot;20:32 (+03)&quot; &quot;05:52 (+03)&quot;
-## [31,] &quot;19:34 (+03)&quot; &quot;19:50 (+03)&quot; &quot;20:31 (+03)&quot; &quot;05:50 (+03)&quot;</code></pre>
+##       Sunset        Maghrib       Isha          Imsak         Midnight     
+##  [1,] &quot;18:25 (+03)&quot; &quot;18:41 (+03)&quot; &quot;19:22 (+03)&quot; &quot;05:18 (+03)&quot; &quot;00:33 (+03)&quot;
+##  [2,] &quot;18:24 (+03)&quot; &quot;18:40 (+03)&quot; &quot;19:21 (+03)&quot; &quot;05:17 (+03)&quot; &quot;00:32 (+03)&quot;
+##  [3,] &quot;18:26 (+03)&quot; &quot;18:42 (+03)&quot; &quot;19:22 (+03)&quot; &quot;05:17 (+03)&quot; &quot;00:33 (+03)&quot;
+##  [4,] &quot;18:26 (+03)&quot; &quot;18:42 (+03)&quot; &quot;19:23 (+03)&quot; &quot;05:16 (+03)&quot; &quot;00:32 (+03)&quot;
+##  [5,] &quot;18:26 (+03)&quot; &quot;18:42 (+03)&quot; &quot;19:23 (+03)&quot; &quot;05:15 (+03)&quot; &quot;00:32 (+03)&quot;
+##  [6,] &quot;18:26 (+03)&quot; &quot;18:42 (+03)&quot; &quot;19:22 (+03)&quot; &quot;05:14 (+03)&quot; &quot;00:31 (+03)&quot;
+##  [7,] &quot;18:26 (+03)&quot; &quot;18:42 (+03)&quot; &quot;19:23 (+03)&quot; &quot;05:13 (+03)&quot; &quot;00:31 (+03)&quot;
+##  [8,] &quot;18:28 (+03)&quot; &quot;18:43 (+03)&quot; &quot;19:24 (+03)&quot; &quot;05:13 (+03)&quot; &quot;00:31 (+03)&quot;
+##  [9,] &quot;18:28 (+03)&quot; &quot;18:44 (+03)&quot; &quot;19:25 (+03)&quot; &quot;05:12 (+03)&quot; &quot;00:31 (+03)&quot;
+## [10,] &quot;18:27 (+03)&quot; &quot;18:43 (+03)&quot; &quot;19:24 (+03)&quot; &quot;05:10 (+03)&quot; &quot;00:30 (+03)&quot;
+## [11,] &quot;18:28 (+03)&quot; &quot;18:43 (+03)&quot; &quot;19:24 (+03)&quot; &quot;05:09 (+03)&quot; &quot;00:30 (+03)&quot;
+## [12,] &quot;18:29 (+03)&quot; &quot;18:45 (+03)&quot; &quot;19:26 (+03)&quot; &quot;05:09 (+03)&quot; &quot;00:30 (+03)&quot;
+## [13,] &quot;18:29 (+03)&quot; &quot;18:45 (+03)&quot; &quot;19:26 (+03)&quot; &quot;05:09 (+03)&quot; &quot;00:30 (+03)&quot;
+## [14,] &quot;18:29 (+03)&quot; &quot;18:44 (+03)&quot; &quot;19:25 (+03)&quot; &quot;05:07 (+03)&quot; &quot;00:29 (+03)&quot;
+## [15,] &quot;18:30 (+03)&quot; &quot;18:46 (+03)&quot; &quot;19:27 (+03)&quot; &quot;05:07 (+03)&quot; &quot;00:30 (+03)&quot;
+## [16,] &quot;18:30 (+03)&quot; &quot;18:46 (+03)&quot; &quot;19:27 (+03)&quot; &quot;05:06 (+03)&quot; &quot;00:29 (+03)&quot;
+## [17,] &quot;18:31 (+03)&quot; &quot;18:46 (+03)&quot; &quot;19:27 (+03)&quot; &quot;05:05 (+03)&quot; &quot;00:29 (+03)&quot;
+## [18,] &quot;18:30 (+03)&quot; &quot;18:46 (+03)&quot; &quot;19:27 (+03)&quot; &quot;05:03 (+03)&quot; &quot;00:28 (+03)&quot;
+## [19,] &quot;18:31 (+03)&quot; &quot;18:47 (+03)&quot; &quot;19:28 (+03)&quot; &quot;05:03 (+03)&quot; &quot;00:28 (+03)&quot;
+## [20,] &quot;18:32 (+03)&quot; &quot;18:47 (+03)&quot; &quot;19:28 (+03)&quot; &quot;05:02 (+03)&quot; &quot;00:28 (+03)&quot;
+## [21,] &quot;18:31 (+03)&quot; &quot;18:47 (+03)&quot; &quot;19:28 (+03)&quot; &quot;05:00 (+03)&quot; &quot;00:27 (+03)&quot;
+## [22,] &quot;18:32 (+03)&quot; &quot;18:48 (+03)&quot; &quot;19:29 (+03)&quot; &quot;05:00 (+03)&quot; &quot;00:28 (+03)&quot;
+## [23,] &quot;18:33 (+03)&quot; &quot;18:48 (+03)&quot; &quot;19:29 (+03)&quot; &quot;04:59 (+03)&quot; &quot;00:27 (+03)&quot;
+## [24,] &quot;18:32 (+03)&quot; &quot;18:48 (+03)&quot; &quot;19:29 (+03)&quot; &quot;04:57 (+03)&quot; &quot;00:26 (+03)&quot;
+## [25,] &quot;18:32 (+03)&quot; &quot;18:48 (+03)&quot; &quot;19:29 (+03)&quot; &quot;04:56 (+03)&quot; &quot;00:26 (+03)&quot;
+## [26,] &quot;18:34 (+03)&quot; &quot;18:49 (+03)&quot; &quot;19:30 (+03)&quot; &quot;04:56 (+03)&quot; &quot;00:26 (+03)&quot;
+## [27,] &quot;18:34 (+03)&quot; &quot;18:50 (+03)&quot; &quot;19:31 (+03)&quot; &quot;04:55 (+03)&quot; &quot;00:26 (+03)&quot;
+## [28,] &quot;19:33 (+03)&quot; &quot;19:49 (+03)&quot; &quot;20:30 (+03)&quot; &quot;05:53 (+03)&quot; &quot;01:25 (+03)&quot;
+## [29,] &quot;19:35 (+03)&quot; &quot;19:50 (+03)&quot; &quot;20:32 (+03)&quot; &quot;05:53 (+03)&quot; &quot;01:25 (+03)&quot;
+## [30,] &quot;19:35 (+03)&quot; &quot;19:51 (+03)&quot; &quot;20:32 (+03)&quot; &quot;05:52 (+03)&quot; &quot;01:25 (+03)&quot;
+## [31,] &quot;19:34 (+03)&quot; &quot;19:50 (+03)&quot; &quot;20:31 (+03)&quot; &quot;05:50 (+03)&quot; &quot;01:24 (+03)&quot;</code></pre>
 <p><br></p>
 </div>
 

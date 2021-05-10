@@ -72,11 +72,11 @@ Please clarify the method. You can choose numbers 0 to 14 which stand for:
     resMap<- c("date"=callMap$data$date$gregorian$date[ind], 
                      callMap$data$timings[ind,])
 
-    outRes<- as.POSIXct(rep(gsub(" .*","", res[mapBy]), length(res)-2), format="%H:%M")+ as.numeric(lapply(resMap[-c(1, length(resMap))], function(x){difftime(as.POSIXct(gsub(" .*","",x), format="%H:%M"), as.POSIXct(gsub(" .*","",resMap$Dhuhr), format="%H:%M"), units ="secs")} ))
+    outRes<- as.POSIXct(rep(gsub(" .*","", res[mapBy]), length(res)-1), format="%H:%M")+ as.numeric(lapply(resMap[-c(1)], function(x){difftime(as.POSIXct(gsub(" .*","",x), format="%H:%M"), as.POSIXct(gsub(" .*","",resMap$Dhuhr), format="%H:%M"), units ="secs")} ))
     outRes<- c(res[1], as.character(outRes))
     outRes[-1]<- paste(gsub(":00$", "", unlist(gsub(".* ", "", outRes[-1]))), gsub(".* ","",resMap["Dhuhr"]) )
     outRes<- unlist(outRes)
-    names(outRes)<- names(res[-c(length(res))])
+    names(outRes)<- names(res)
                
   }
   return(outRes)
