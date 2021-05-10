@@ -11,8 +11,9 @@ adhan<- function(
   
   if(missing(day)|missing(month)|missing(year)){
     now<- unlist(strsplit(date(), split=" "))
-    names(now)<- c("weekday", "month", "blank", "day", "time", "year")
-  
+    now<- now[which(now!="")]
+    names(now)<- c("weekday", "month", "day", "time", "year")
+    
   
   month<- match(now["month"], month.name)
   day<- now["day"]
