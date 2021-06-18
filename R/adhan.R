@@ -15,7 +15,7 @@ adhan<- function(
     names(now)<- c("weekday", "month", "day", "time", "year")
     
   
-  month<- match(now["month"], month.name)
+  month<- grep(now["month"], month.name)
   day<- now["day"]
   year<- now["year"]
   }

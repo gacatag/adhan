@@ -1,7 +1,7 @@
 Package: adhan
 Type: Package
 Title: Get Adhan (i.e. Islamic prayer) times
-Version: 0.1.3
+Version: 0.1.4
 Date: 2021-05-02
 Author: Ali Oghabian <ali.oghabian@gmail.com>
 Maintainer: Ali Oghabian <ali.oghabian@gmail.com>

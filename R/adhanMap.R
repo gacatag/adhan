@@ -40,7 +40,7 @@ Please clarify the method. You can choose numbers 0 to 14 which stand for:
     names(now)<- c("weekday", "month", "day", "time", "year")
     
   
-  month<- match(now["month"], month.name)
+  month<- grep(now["month"], month.name)
   day<- now["day"]
   year<- now["year"]
   }
