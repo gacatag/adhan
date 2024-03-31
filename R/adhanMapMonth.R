@@ -42,13 +42,13 @@ Please clarify the method. You can choose numbers 0 to 14 which stand for:
   month<- match(now["month"], month.name)
   year<- now["year"]
   }
-  callStr<-"http://api.aladhan.com/v1/calendar?latitude=51.508515&longitude=-0.1254872&method=2&month=4&year=2017"
+ # callStr<-"http://api.aladhan.com/v1/calendar?latitude=51.508515&longitude=-0.1254872&method=2&month=4&year=2017"
   
-  callStr<-paste("http://api.aladhan.com/v1/calendarByCity?",
+  callStr<-paste("http://api.aladhan.com/v1/calendarByCity/",
+                 year, "/",
+                 month, "?",
                  "city=", city, "&",
                  "country=", country, "&",
-                 "month=", month, "&",
-                 "year=", year, "&",
                  "method=", method, sep="")
   
   call<- jsonlite::fromJSON(callStr)
@@ -58,12 +58,13 @@ Please clarify the method. You can choose numbers 0 to 14 which stand for:
           call$data$timings)
   outRes<-res
   if(mapCity!=""&mapCountry!=""){
-    callMapStr<-paste("http://api.aladhan.com/v1/calendarByCity?",
-                   "city=", mapCity, "&",
-                   "country=", mapCountry, "&",
-                   "month=", month, "&",
-                   "year=", year, "&",
-                   "method=", method, sep="")
+    callMapStr<-paste("http://api.aladhan.com/v1/calendarByCity/",
+                      year, "/",
+                      month, "?",
+                      "city=", mapCity, "&",
+                      "country=", mapCountry, "&",
+                      "method=", method, sep="")
+    
     
     callMap<- jsonlite::fromJSON(gsub(" ", "", callMapStr, fixed=TRUE))
     resMap<- data.frame("date"=callMap$data$date$gregorian$date, 

@@ -21,11 +21,11 @@ adhan<- function(
   }
   callStr<-"http://api.aladhan.com/v1/calendar?latitude=51.508515&longitude=-0.1254872&method=2&month=4&year=2017"
   
-  callStr<-paste("http://api.aladhan.com/v1/calendarByCity?",
+  callStr<-paste("http://api.aladhan.com/v1/calendarByCity/",
+                 year, "/",
+                 month, "?",
                  "city=", city, "&",
                  "country=", country, "&",
-                 "month=", month, "&",
-                 "year=", year, "&",
                  "method=", method, sep="")
   
   call<- jsonlite::fromJSON(gsub(" ", "", callStr))
